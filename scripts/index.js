@@ -21,7 +21,41 @@ document.getElementById("bg-change-btn").addEventListener("click", function () {
 });
 // move to another page
 document.getElementById("discover-div").addEventListener("click", function () {
-  window.location.href = "./blogs.html";
-  console.log("clicked fo go to blogs");
+  window.location.href = "blogs.html";
+  
 });
+
+
+// Btns functions
+document.getElementById("main-container").addEventListener("click", function (event) {
+
+  if (event.target.tagName === "BUTTON") {
+    alert("Board updated successfully!");
+    decrementTasksCount();
+    incrementTasksCount();
+    console.log(event.target.parentElement.parentElement.children[1]);
+    // let parent = event.target.parentElement;
+    event.target.disabled = true; 
+    event.target.style.backgroundColor = "lightgrey"; 
+     
+    
+  }
+});
+
+
+function decrementTasksCount(){
+  const tasksCount = parseInt(document.getElementById("tasks-count").innerText);
+  document.getElementById("tasks-count").innerText = tasksCount - 1;
+
+ 
+}
+function incrementTasksCount(){
+  const tasksCount = parseInt(document.getElementById("total-tasks-count").innerText);
+  document.getElementById("total-tasks-count").innerText = tasksCount + 1;
+
+ 
+}
+
+
+
 
