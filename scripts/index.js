@@ -21,6 +21,7 @@ document.getElementById("bg-change-btn").addEventListener("click", function () {
 });
 // move to another page
 document.getElementById("discover-div").addEventListener("click", function () {
-  window.location.href = "blogs.html";
+  window.location.href = "./blogs.html";
+  console.log("clicked fo go to blogs");
 });
 
