@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryText: "#00303C",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body id="main-body" class="bg-[#F4F7FF] p-4 font-poppins">
+    <div class="container mx-auto p-6 rounded-xl">
+      <!-- Header -->
+      <div
+        class="bg-[#FFFFFF] flex justify-between items-center gap-3 mb-3 px-4 py-3 rounded-2xl shadow text-primaryText"
+      >
+        <div class="flex items-center gap-4">
+          <img class="h-12 w-12" src="./assets/logo.svg" alt="" />
+          <div class="text-4xl text-primaryText">
+            <span>Dev</span>
+            <span class="font-bold">Board</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-6">
+          <div
+            class="bg-[#F4F7FF] flex justify-center items-center gap-3 px-4 py-2 rounded-[32px] shadow-sm"
+          >
+            <img class="h-8 w-8" src="./assets/checkbox.svg" alt="" />
+            <span class="text-[2rem] font-bold">23</span>
+          </div>
+          <button
+            id="bg-change-btn" class="w-16 h-16 bg-[#F4F7FF] p-2 rounded-full shadow-sm flex justify-center items-center relative"
+          >
+            <img id="rotateImg" src="./assets/theme.svg" class="transition-transform duration-400" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="flex justify-between gap-4">
+        <div class="bg-[#FFFFFF] mt-3 w-3/4 rounded-2xl p-2 shadow">
+          <!-- top 3 cards -->
+          <div class="grid grid-flow-col-1 lg:grid-cols-3 lg:gap-4 gap-2 p-4">
+            <div class="bg-[#F4F7FF] p-4 rounded-lg flex items-center gap-4">
+              <div class="bg-[#FFFFFF] p-4 rounded-full w-14 h-14">
+                <img src="./assets/checkbox.svg" alt="" />
+              </div>
+              <div class="">
+                <p class="text-md font-medium">Task Assigned</p>
+                <p class="text-3xl font-bold">6</p>
+              </div>
+            </div>
+            <div
+              class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center gap-3 p-4 rounded-lg text-white"
+            >
+              <img src="./assets/fi_18577309.svg" class="h-20 w-20" alt="" />
+              <p class="text-[24px]">Discover Something New Today!</p>
+            </div>
+            <div
+              class="bg-[#F4F7FF] p-4 rounded-lg flex items-center justify-center gap-4"
+            >
+              <div class="bg-[#FFFFFF] p-4 rounded-full">
+                <img src="./assets/fi-sr-calendar.svg" alt="" />
+              </div>
+              <div class="">
+                <!-- <p id="day" class="text-xl font-bold">Fri</p> -->
+                <p id="dateAndyear" class="text-xl font-bold">Feb 28 2025</p>
+              </div>
+            </div>
+          </div>
+          <hr class="mt-3 border-t-1 border-dashed border-[#3752FD] mx-5" />
+
+          <!-- 6 cards -->
+
+          <div class="grid grid-cols-3 gap-5 mt-6 m-4">
+            <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+              <span class="bg-[#FFFFFF] px-3 py-2 rounded-full text-sm"
+                >Shop Ease</span
+              >
+              <h2 class="text-2xl font-medium mt-4">Fix Mobile Button Issue</h2>
+              <div class="bg-[#FFFFFF] overflow-hidden rounded-lg mt-3">
+                <p class="text-gray-600 text-sm p-2">
+                  A card component has a figure, a body d
+                  part...hsfsfdfshffffffffffffffffffffffff ...sdjfhhafhfhyfa
+                </p>
+              </div>
+
+              <hr class="mt-3 border-t-1 border-dashed border-[#3752FD]" />
+              <div class="flex justify-between items-center mt-3">
+                <p class="mt-2 text-gray-500">
+                  <span class="text-[1rem]">Deadline</span><br />
+                  <span class="font-bold">25 March 2025</span>
+                </p>
+
+                <button
+                  class="mt-2 bg-[#3752FD] text-white px-4 py-2 rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+              <span class="bg-[#FFFFFF] px-3 py-2 rounded-full text-sm"
+                >Shop Ease</span
+              >
+              <h2 class="text-2xl font-medium mt-4">Fix Mobile Button Issue</h2>
+              <div class="bg-[#FFFFFF] overflow-hidden rounded-lg mt-3">
+                <p class="text-gray-600 text-sm p-2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Porro, quis. Delectus esse hic cupiditate illum nemo sed
+                  alias, totam reprehenderit.
+                </p>
+              </div>
+
+              <hr class="mt-3 border-t-1 border-dashed border-[#3752FD]" />
+              <div class="flex justify-between items-center mt-3">
+                <p class="mt-2 text-gray-500">
+                  <span class="text-[1rem]">Deadline</span><br />
+                  <span class="font-bold">25 March 2025</span>
+                </p>
+
+                <button
+                  class="mt-2 bg-[#3752FD] text-white px-4 py-2 rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+              <span class="bg-[#FFFFFF] px-3 py-2 rounded-full text-sm"
+                >Shop Ease</span
+              >
+              <h2 class="text-2xl font-medium mt-4">Fix Mobile Button Issue</h2>
+              <div class="bg-[#FFFFFF] overflow-hidden rounded-lg mt-3">
+                <p class="text-gray-600 text-sm p-2">
+                  A card component has a figure, a body d
+                  part...hsfsfdfshffffffffffffffffffffffff ...sdjfhhafhfhyfa
+                </p>
+              </div>
+
+              <hr class="mt-3 border-t-1 border-dashed border-[#3752FD]" />
+              <div class="flex justify-between items-center mt-3">
+                <p class="mt-2 text-gray-500">
+                  <span class="text-[1rem]">Deadline</span><br />
+                  <span class="font-bold">25 March 2025</span>
+                </p>
+
+                <button
+                  class="mt-2 bg-[#3752FD] text-white px-4 py-2 rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+              <span class="bg-[#FFFFFF] px-3 py-2 rounded-full text-sm"
+                >Shop Ease</span
+              >
+              <h2 class="text-2xl font-medium mt-4">Fix Mobile Button Issue</h2>
+              <div class="bg-[#FFFFFF] overflow-hidden rounded-lg mt-3">
+                <p class="text-gray-600 text-sm p-2">
+                  A card component has a figure, a body d
+                  part...hsfsfdfshffffffffffffffffffffffff ...sdjfhhafhfhyfa
+                </p>
+              </div>
+
+              <hr class="mt-3 border-t-1 border-dashed border-[#3752FD]" />
+              <div class="flex justify-between items-center mt-3">
+                <p class="mt-2 text-gray-500">
+                  <span class="text-[1rem]">Deadline</span><br />
+                  <span class="font-bold">25 March 2025</span>
+                </p>
+
+                <button
+                  class="mt-2 bg-[#3752FD] text-white px-4 py-2 rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+              <span class="bg-[#FFFFFF] px-3 py-2 rounded-full text-sm"
+                >Shop Ease</span
+              >
+              <h2 class="text-2xl font-medium mt-4">Fix Mobile Button Issue</h2>
+              <div class="bg-[#FFFFFF] overflow-hidden rounded-lg mt-3">
+                <p class="text-gray-600 text-sm p-2">
+                  A card component has a figure, a body d
+                  part...hsfsfdfshffffffffffffffffffffffff ...sdjfhhafhfhyfa
+                </p>
+              </div>
+
+              <hr class="mt-3 border-t-1 border-dashed border-[#3752FD]" />
+              <div class="flex justify-between items-center mt-3">
+                <p class="mt-2 text-gray-500">
+                  <span class="text-[1rem]">Deadline</span><br />
+                  <span class="font-bold">25 March 2025</span>
+                </p>
+
+                <button
+                  class="mt-2 bg-[#3752FD] text-white px-4 py-2 rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+              <span class="bg-[#FFFFFF] px-3 py-2 rounded-full text-sm"
+                >Shop Ease</span
+              >
+              <h2 class="text-2xl font-medium mt-4">Fix Mobile Button Issue</h2>
+              <div class="bg-[#FFFFFF] overflow-hidden rounded-lg mt-3">
+                <p class="text-gray-600 text-sm p-2">
+                  A card component has a figure, a body d
+                  part...hsfsfdfshffffffffffffffffffffffff ...sdjfhhafhfhyfa
+                </p>
+              </div>
+
+              <hr class="mt-3 border-t-1 border-dashed border-[#3752FD]" />
+              <div class="flex justify-between items-center mt-3">
+                <p class="mt-2 text-gray-500">
+                  <span class="text-[1rem]">Deadline</span><br />
+                  <span class="font-bold">25 March 2025</span>
+                </p>
+
+                <button
+                  class="mt-2 bg-[#3752FD] text-white px-4 py-2 rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+              <span class="bg-[#FFFFFF] px-3 py-2 rounded-full text-sm"
+                >Shop Ease</span
+              >
+              <h2 class="text-2xl font-medium mt-4">Fix Mobile Button Issue</h2>
+              <div class="bg-[#FFFFFF] overflow-hidden rounded-lg mt-3">
+                <p class="text-gray-600 text-sm p-2">
+                  A card component has a figure, a body d
+                  part...hsfsfdfshffffffffffffffffffffffff ...sdjfhhafhfhyfa
+                </p>
+              </div>
+
+              <hr class="mt-3 border-t-1 border-dashed border-[#3752FD]" />
+              <div class="flex justify-between items-center mt-3">
+                <p class="mt-2 text-gray-500">
+                  <span class="text-[1rem]">Deadline</span><br />
+                  <span class="font-bold">25 March 2025</span>
+                </p>
+
+                <button
+                  class="mt-2 bg-[#3752FD] text-white px-4 py-2 rounded-lg"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity log -->
+        <div class="mt-3 w-1/4 bg-[#FFFFFF] p-4 rounded-2xl shadow">
+          <div class="">
+            <div
+              class="flex gap-3 justify-center items-center font-medium text-[20px]"
+            >
+              <img src="./assets/activity.png" alt="" />
+              <h2>Activity log</h2>
+            </div>
+            <button class="mt-2 bg-[#3752FD] text-white px-4 py-2 rounded-lg">
+              Clear History
+            </button>
+          </div>
+          <hr class="mt-3 border-t-1 border-dashed border-[#3752FD]" />
+          <div class="mt-3 flex flex-col gap-3">
+            <div class="bg-[#F4F7FF] rounded-lg p-3 text-[1rem] text-gray-600">
+              you have completed this task
+            </div>
+            <div class="bg-[#F4F7FF] rounded-lg p-3 text-[1rem] text-gray-600">
+              you have completed this task Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Pariatur voluptatibus deleniti
+              tempora libero dolorum quod obcaecati labore exercitationem
+              consectetur repellat!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
