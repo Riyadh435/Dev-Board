@@ -19,3 +19,8 @@ document.getElementById("bg-change-btn").addEventListener("click", function () {
     "rotateImg"
   ).style.transform = `rotate(${rotation}deg)`;
 });
+// move to another page
+document.getElementById("discover-div").addEventListener("click", function () {
+  window.location.href = "blogs.html";
+});
+
