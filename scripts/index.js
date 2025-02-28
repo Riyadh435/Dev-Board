@@ -33,13 +33,18 @@ document.getElementById("main-container").addEventListener("click", function (ev
     alert("Board updated successfully!");
     decrementTasksCount();
     incrementTasksCount();
-    console.log(event.target.parentElement.parentElement.children[1]);
-    // let parent = event.target.parentElement;
+    const title = event.target.parentElement.parentElement.children[1].innerText;
+   writeTaskOnHistory(title);
     event.target.disabled = true; 
     event.target.style.backgroundColor = "lightgrey"; 
      
     
   }
+});
+
+// Clear all history
+document.getElementById("clear-history-btn").addEventListener("click", function () {
+  document.getElementById("history-container").innerHTML = "";
 });
 
 
@@ -55,6 +60,27 @@ function incrementTasksCount(){
 
  
 }
+function writeTaskOnHistory(tasksTitle) {
+  const currentTime = new Date().toTimeString().split(" ")[0];
+  
+  let newDiv = document.createElement("div");
+  newDiv.innerText = "You have Complete The Task "+ tasksTitle+" at "+getTime();
+  newDiv.classList.add("history-cards");
+  document.getElementById("history-container").appendChild(newDiv);
+}
+function getTime() {
+  return new Date().toLocaleTimeString("en-US", {
+    timeZone: "Asia/Dhaka", 
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true, 
+  });
+}
+
+console.log(getDhakaTime());
+
+
 
 
 
