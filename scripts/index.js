@@ -6,7 +6,7 @@ document.getElementById("dateAndyear").innerHTML = today.toDateString();
 
 // Change background color
 
-const colors = ["#FAEBD7", "#001F3F", "#000000", "#F4F7FF"];
+const colors = ["#FAEBD7", "#001F3F", "#000000", "#F4F7FF" ,"lightgreen", "lightblue", "lightcoral"];
 let index = 0;
 let rotation = 0;
 

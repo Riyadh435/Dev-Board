@@ -37,7 +37,7 @@
     </style>
   </head>
   <body id="main-body" class="bg-[#F4F7FF] p-1 lg:p-4 font-poppins">
-    <div class="container lg:mx-auto p-1 lg:p-6 rounded-xl ">
+    <div class="container lg:mx-auto p-1 lg:p-6 rounded-xl">
       <!-- Header -->
       <div
         class="bg-[#FFFFFF] flex justify-between items-center gap-3 mb-3 px-4 py-3 rounded-2xl shadow text-primaryText"
@@ -54,7 +54,11 @@
             class="bg-[#F4F7FF] flex justify-center items-center gap-3 px-4 py-2 rounded-[32px] shadow-sm"
           >
             <img class="h-8 w-8" src="./assets/checkbox.svg" alt="" />
-            <span id="total-tasks-count" class="text-[20px] lg:text-[2rem] font-bold">23</span>
+            <span
+              id="total-tasks-count"
+              class="text-[20px] lg:text-[2rem] font-bold"
+              >23</span
+            >
           </div>
           <button
             id="bg-change-btn"
@@ -70,10 +74,17 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row lg:flex-row justify-between items-center md:items-start lg:items-start gap-2 lg:gap-4">
-        <div class="bg-[#FFFFFF] mt-3 lg:w-3/4 rounded-2xl p-2 shadow mx-2 lg:mx-0">
+      <div
+        class="flex flex-col md:flex-row lg:flex-row justify-between items-center md:items-start lg:items-start gap-2 lg:gap-4"
+      >
+      <!-- main container -->
+        <div
+          class="bg-[#FFFFFF] mt-3 md:w-3/4 lg:w-3/4 rounded-2xl p-2 shadow mx-2 lg:mx-0"
+        >
           <!-- top 3 cards -->
-          <div class="flex flex-col md:flex-row lg:flex-row  gap-2 lg:gap-4 p-2 lg:p-4 justify-between">
+          <div
+            class="flex flex-col md:flex-row lg:flex-row gap-2 lg:gap-4 p-2 lg:p-4 justify-between"
+          >
             <div class="bg-[#F4F7FF] p-4 rounded-lg flex items-center gap-4">
               <div class="bg-[#FFFFFF] p-4 rounded-full w-14 h-14">
                 <img src="./assets/checkbox.svg" alt="" />
@@ -87,8 +98,14 @@
               id="discover-div"
               class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center gap-3 p-4 rounded-lg text-white"
             >
-              <img src="./assets/fi_18577309.svg" class="h-10 w-10 lg:h-20 lg:w-20" alt="" />
-              <p class="text-[13px] lg:text-[20px]">Discover Something New Today!</p>
+              <img
+                src="./assets/fi_18577309.svg"
+                class="h-10 w-10 lg:h-20 lg:w-20"
+                alt=""
+              />
+              <p class="text-[13px] lg:text-[20px]">
+                Discover Something New Today!
+              </p>
             </div>
             <div
               class="bg-[#F4F7FF] p-4 rounded-lg flex items-center justify-center gap-4"
@@ -98,7 +115,9 @@
               </div>
               <div class="">
                 <!-- <p id="day" class="text-xl font-bold">Fri</p> -->
-                <p id="dateAndyear" class="text-[15px] lg:text-xl font-bold">Feb 28 2025</p>
+                <p id="dateAndyear" class="text-[15px] lg:text-xl font-bold">
+                  Feb 28 2025
+                </p>
               </div>
             </div>
           </div>
@@ -106,7 +125,10 @@
 
           <!-- 6 cards -->
 
-          <div id="main-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3  lg:gap-5 m-1 lg:m-4">
+          <div
+            id="main-container"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 m-1 lg:m-4"
+          >
             <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
               <span class="bg-[#FFFFFF] px-3 py-2 rounded-full text-sm"
                 >Shop Ease</span
@@ -194,7 +216,9 @@
               <h2 class="text-2xl font-medium mt-4">Add new emoji 🤲</h2>
               <div class="bg-[#FFFFFF] overflow-hidden rounded-lg mt-3">
                 <p class="text-gray-600 text-sm p-2 text-justify">
-                  Adding this emoji will enhance communication by providing users with a better way to express emotion ,it holds cultural, social, or linguistic importance.
+                  Adding this emoji will enhance communication by providing
+                  users with a better way to express emotion ,it holds cultural,
+                  social, or linguistic importance.
                 </p>
               </div>
 
@@ -216,11 +240,12 @@
               <span class="bg-[#FFFFFF] px-3 py-2 rounded-full text-sm"
                 >Google LLC</span
               >
-              <h2 class="text-2xl font-medium mt-4">Integrate OpenAI API </h2>
+              <h2 class="text-2xl font-medium mt-4">Integrate OpenAI API</h2>
               <div class="bg-[#FFFFFF] overflow-hidden rounded-lg mt-3">
                 <p class="text-gray-600 text-sm p-2 text-justify">
-                  Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                  and ensure onClick works properly
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
                 </p>
               </div>
 
@@ -242,10 +267,11 @@
               <span class="bg-[#FFFFFF] px-3 py-2 rounded-full text-sm"
                 >Glassdoar</span
               >
-              <h2 class="text-2xl font-medium mt-4">Improve Job searching </h2>
+              <h2 class="text-2xl font-medium mt-4">Improve Job searching</h2>
               <div class="bg-[#FFFFFF] overflow-hidden rounded-lg mt-3">
                 <p class="text-gray-600 text-sm p-2 text-justify">
-                  Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                  Store the user's preference in localStorage, update CSS
+                  variables dynamically, and apply a smooth transition effect.
                 </p>
               </div>
 
@@ -267,22 +293,25 @@
         </div>
 
         <!-- Activity log -->
-        <div class="mt-3 lg:w-1/4 bg-[#FFFFFF] p-2 lg:p-4 rounded-2xl shadow mx-2 lg:mx-0">
-          <div
-          class="flex gap-3 justify-center items-center font-medium text-[20px]"
+        <div
+          class="mt-3  md:w-1/4 lg:w-1/4 bg-[#FFFFFF] p-2 lg:p-4 rounded-2xl shadow mx-2 lg:mx-0"
         >
-          <img src="./assets/activity.png" class="hidden lg:block" alt="" />
-          <h2>Activity log</h2>
-        </div>
-        <div class="flex justify-between items-center mt-2">
-          <button id="clear-history-btn" class="w-40 mx-auto mt-3 bg-[#3752FD] text-white px-4 py-2 rounded-lg">
-            Clear History
-          </button>
-        </div>
-          <hr class="mt-3 border-t-1 border-dashed border-[#3752FD]" />
-          <div id="history-container" class="mt-3 flex flex-col gap-3">
-            
+          <div
+            class="flex gap-3 justify-center items-center font-medium text-[20px]"
+          >
+            <img src="./assets/activity.png" class="hidden lg:block" alt="" />
+            <h2>Activity log</h2>
           </div>
+          <div class="flex justify-between items-center mt-2">
+            <button
+              id="clear-history-btn"
+              class="w-40 mx-auto mt-3 bg-[#3752FD] text-white px-4 py-2 rounded-lg"
+            >
+              Clear History
+            </button>
+          </div>
+          <hr class="mt-3 border-t-1 border-dashed border-[#3752FD]" />
+          <div id="history-container" class="mt-3 flex flex-col gap-3"></div>
         </div>
       </div>
     </div>
